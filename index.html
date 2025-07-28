@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUNK Token - The Ultimate Meme Token Powered by Solana</title>
+    <meta name="description" content="PUNK is a vibrant, community-driven meme token built on the Solana blockchain. Join the most energetic meme community on Solana where Bonk and pump are FUN!">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="PUNK Token - The Ultimate Meme Token">
+    <meta property="og:description" content="Join the PUNK revolution! Community-driven meme token on Solana blockchain.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://punkfuns.fun/">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Mobile Touch Effects -->
+    <div id="mobile-touch-effects"></div>
+    
+    <!-- Animated Background -->
+    <div class="animated-bg-collage">
+        <div class="bg-shape bg-shape-1"></div>
+        <div class="bg-shape bg-shape-2"></div>
+        <div class="bg-shape bg-shape-3"></div>
+        <div class="bg-shape bg-shape-4"></div>
+        <div class="bg-shape bg-shape-5"></div>
+    </div>
+    
+    <!-- Geometric Patterns -->
+    <div class="geometric-patterns">
+        <svg class="geometric-svg" viewBox="0 0 100 100">
+            <defs>
+                <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                    <path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255, 105, 180, 0.1)" stroke-width="0.5"/>
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+        </svg>
+    </div>
+    
+    <!-- Floating Particles -->
+    <canvas id="floating-particles" class="floating-particles"></canvas>
+    
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <div class="header-container">
+            <div class="header-logo">
+                <span class="logo-text">PUNK</span>
+            </div>
+            <nav class="header-nav desktop-nav">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#community" class="nav-link">Community</a>
+                <a href="#generator" class="nav-link">Tokenomics</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <nav class="mobile-nav" id="mobile-nav">
+            <a href="#hero" class="mobile-nav-link">Home</a>
+            <a href="#community" class="mobile-nav-link">Community</a>
+            <a href="#generator" class="mobile-nav-link">Tokenomics</a>
+            <a href="#faq" class="mobile-nav-link">FAQ</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <!-- Launch Campaign Badge -->
+                <div class="campaign-badge">
+                    <span>The Ultimate Meme Token Powered by Solana</span>
+                </div>
+                
+                <div class="token-supply">
+                    <span class="supply-number">1,000,000,000</span> 
+                    <span class="token-symbol">$PUNK</span>
+                </div>
+
+                <!-- Main Character -->
+                <div class="character-container">
+                    <img 
+                        src="yummyyy_1753305586094.png" 
+                        alt="PUNK Character" 
+                        class="character-image" 
+                    />
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="main-headline">PUNK</h1>
+
+                <!-- Subtitle -->
+                <p class="subtitle">Bonk and pump are FUN</p>
+
+                <!-- CTA Buttons -->
+                <div class="cta-buttons">
+                    <button 
+                        onclick="handleBuyNow()"
+                        class="btn btn-primary ripple-effect"
+                    >
+                        🚀 BUY NOW
+                    </button>
+                    <div class="secondary-buttons">
+                        <button 
+                            onclick="handleChart()"
+                            class="btn btn-secondary ripple-effect"
+                        >
+                            📊 CHART
+                        </button>
+                        <button 
+                            onclick="handleTelegram()"
+                            class="btn btn-secondary ripple-effect"
+                        >
+                            💬 TG
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Additional Buttons -->
+                <div class="additional-buttons">
+                    <button 
+                        onclick="handleFollowX()"
+                        class="btn btn-outline ripple-effect"
+                    >
+                        🐦 FOLLOW X
+                    </button>
+                </div>
+
+                <!-- Contract Address -->
+                <div class="contract-address">
+                    <p class="contract-label">Contract Address:</p>
+                    <div class="contract-content">
+                        <p class="contract-text" id="contract-text">5MM88hAZcY1cwZB2fFFe65JAuqwgrnMnogF6Lhmp1U1C</p>
+                        <button
+                            onclick="handleCopyAddress()"
+                            class="copy-btn"
+                            id="copy-btn"
+                        >
+                            <svg class="copy-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+                                <path d="m4 16-2-2v-4l2-2h4l2 2v4l-2 2z"/>
+                            </svg>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="copy-success" id="copy-success" style="display: none;">✓ Copied to clipboard!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sliding Ticker -->
+        <div class="sliding-ticker">
+            <div class="ticker-wrapper">
+                <div class="ticker-content">
+                    <span class="ticker-item">$PUNK</span>
+                    <span class="ticker-item">🚀 TO THE MOON</span>
+                    <span class="ticker-item">$PUNK</span>
+                    <span class="ticker-item">💎 DIAMOND HANDS</span>
+                    <span class="ticker-item">$PUNK</span>
+                    <span class="ticker-item">🔥 PUMP IT</span>
+                    <span class="ticker-item">$PUNK</span>
+                    <span class="ticker-item">⚡ LIGHTNING FAST</span>
+                    <span class="ticker-item">$PUNK</span>
+                    <span class="ticker-item">🌟 SOLANA POWER</span>
+                    <span class="ticker-item">$PUNK</span>
+                    <span class="ticker-item">🎯 BONK AND PUMP</span>
+                    <span class="ticker-item">$PUNK</span>
+                    <span class="ticker-item">🎉 ARE FUN</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Community Section -->
+        <section id="community" class="community-section">
+            <div class="container">
+                <div class="community-image">
+                    <img 
+                        src="photo_2025-07-23_20-27-45-removebg-preview_1753305961429.png" 
+                        alt="PUNK Character with Growth Chart" 
+                        class="growth-image animate-float" 
+                    />
+                </div>
+                
+                <div class="section-label">
+                    <span>THE COMMUNITY</span>
+                </div>
+                
+                <h2 class="section-title">
+                    Ready to get <span class="text-pink">PUNK?</span>
+                </h2>
+                
+                <p class="section-description">
+                    Join the most energetic meme community on Solana.
+                </p>
+                
+                <div class="community-grid">
+                    <div class="community-cta">
+                        <button 
+                            onclick="handleTelegram()"
+                            class="btn btn-primary ripple-effect"
+                        >
+                            💬 Join Telegram
+                        </button>
+                    </div>
+                    <div class="community-image-side">
+                        <img 
+                            src="yummyyy_1753306143785.png" 
+                            alt="PUNK Character Celebrating" 
+                            class="celebrating-image" 
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Section -->
+        <section class="social-section">
+            <div class="container">
+                <h2 class="section-title">
+                    Join the <span class="text-cyan">PUNK Revolution</span>
+                </h2>
+                
+                <p class="section-description">
+                    Stay connected with the PUNK community! Follow us for explosive memes and daily pump vibes.
+                </p>
+                
+                <button 
+                    onclick="handleFollowX()"
+                    class="btn btn-cyan"
+                >
+                    FOLLOW us on X
+                </button>
+                
+                <img 
+                    src="punk-banner.jpg" 
+                    alt="PUNK Community Banner" 
+                    class="social-banner" 
+                />
+            </div>
+        </section>
+
+        <!-- Generator/Tokenomics Section -->
+        <section id="generator" class="generator-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">TOKENOMICS</span>
+                    <h2 class="section-title">
+                        PUNK <span class="text-yellow">Economics</span>
+                    </h2>
+                    <p class="section-description">
+                        Built for community, powered by fun!
+                    </p>
+                </div>
+                
+                <div class="tokenomics-grid">
+                    <div class="token-details">
+                        <h3 class="details-title">Token Details</h3>
+                        <div class="details-list">
+                            <div class="detail-item">
+                                <span>Total Supply:</span>
+                                <span class="text-cyan">1,000,000,000</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Symbol:</span>
+                                <span class="text-pink">$PUNK</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Blockchain:</span>
+                                <span class="text-yellow">Solana</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Type:</span>
+                                <span>Community Meme Token</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tokenomics-visual">
+                        <img 
+                            src="photo_2025-07-23_20-27-45-removebg-preview_1753306363722.png" 
+                            alt="PUNK Growth Chart" 
+                            class="tokenomics-image animate-pulse-slow" 
+                        />
+                        <button 
+                            onclick="handleBuyNow()"
+                            class="btn btn-yellow"
+                        >
+                            Get PUNK Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label text-pink">FAQ</span>
+                    <h2 class="section-title">
+                        Questions about <span class="text-pink">PUNK?</span>
+                    </h2>
+                    <p class="section-description">
+                        It's okay to have questions. We're here to help.<br>
+                        The PUNK community is strong together.
+                    </p>
+                </div>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(0)">
+                            <h3>What is PUNK?</h3>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>PUNK is a vibrant, community-driven meme token built on the Solana blockchain, inspired by the explosive energy of Bonk and pumpfun. It combines fun with accessibility in decentralized finance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(1)">
+                            <h3>Is $PUNK a meme token or something more?</h3>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>$PUNK is primarily a meme token that brings together a community of fans who appreciate the energy of Bonk and pump.fun. It's designed to be fun, accessible, and community-powered.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(2)">
+                            <h3>What makes PUNK special?</h3>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>PUNK combines the playful spirit of Bonk's community-powered ecosystem with Pump.fun's seamless, zero-threshold token launch mechanics, creating a unique and energetic experience.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(3)">
+                            <h3>What's the purpose of $PUNK?</h3>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The purpose is to redefine fun and accessibility in the world of decentralized finance. We aim to create an energetic community where Bonk and pump are truly FUN.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(4)">
+                            <h3>What should I expect if I buy $PUNK?</h3>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You should expect to join a vibrant community of meme lovers and DeFi enthusiasts. This is a speculative investment and you should only invest what you can afford to lose.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFaq(5)">
+                            <h3>How can I join the PUNK community?</h3>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6,9 12,15 18,9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Join our Telegram at t.me/punkfuns and follow us on X @punkfuns. Anyone can be part of the PUNK revolution!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="disclaimer-section">
+                    <button onclick="handleDisclaimer()" class="disclaimer-link">
+                        Read the full disclaimer
+                    </button>
+                </div>
+                
+                <div class="faq-images">
+                    <img 
+                        src="yummyyy_1753306674607.png" 
+                        alt="PUNK Character" 
+                        class="faq-image" 
+                    />
+                    <img 
+                        src="photo_2025-07-23_20-27-45-removebg-preview_1753306634242.png" 
+                        alt="PUNK Growth" 
+                        class="faq-image animate-bounce-slow" 
+                    />
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section">
+            <div class="container">
+                <p class="final-cta-label">final call to action</p>
+                <h2 class="section-title">Join the PUNK Revolution</h2>
+                <h3 class="final-cta-subtitle">Bonk and pump are FUN</h3>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners-section">
+            <div class="container">
+                <h3 class="partners-title">Powered By</h3>
+                <div class="partners-grid">
+                    <a href="https://solana.com" target="_blank" rel="noopener noreferrer" class="partner-link">
+                        <span>Solana</span>
+                    </a>
+                    <a href="https://jup.ag" target="_blank" rel="noopener noreferrer" class="partner-link">
+                        <span>Jupiter</span>
+                    </a>
+                    <a href="https://pump.fun" target="_blank" rel="noopener noreferrer" class="partner-link">
+                        <span>Pump.fun</span>
+                    </a>
+                    <a href="https://raydium.io" target="_blank" rel="noopener noreferrer" class="partner-link">
+                        <span>Raydium</span>
+                    </a>
+                    <a href="https://dexscreener.com" target="_blank" rel="noopener noreferrer" class="partner-link">
+                        <span>DexScreener</span>
+                    </a>
+                    <a href="https://coingecko.com" target="_blank" rel="noopener noreferrer" class="partner-link">
+                        <span>CoinGecko</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 PUNK Token - Powered by Solana</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

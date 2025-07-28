@@ -1,0 +1,69 @@
+PUNK TOKEN - STATIC WEBSITE DEPLOYMENT GUIDE
+=============================================
+
+📁 REQUIRED FILES (All in root directory):
+- index.html (main website file)
+- styles.css (all styling and animations)
+- script.js (interactive functionality)
+- README.md (documentation)
+- All PNG/JPG image files (PUNK character images)
+
+🚀 DEPLOYMENT STEPS:
+
+1. DOWNLOAD ALL FILES
+   - Download all files from this folder
+   - Keep them in the same directory (no subfolders)
+
+2. UPLOAD TO WEB HOST
+   Options:
+   
+   A) GITHUB PAGES (Free):
+   - Create GitHub repository
+   - Upload all files to main branch
+   - Enable Pages in Settings
+   - Live at: https://username.github.io/repo-name
+   
+   B) NETLIFY (Free):
+   - Go to netlify.com
+   - Drag & drop all files
+   - Instant live URL
+   
+   C) VERCEL (Free):
+   - Go to vercel.com
+   - Upload files or connect GitHub
+   - Automatic deployment
+   
+   D) TRADITIONAL HOSTING:
+   - Upload all files to public_html or www folder
+   - Access via your domain
+
+3. TEST WEBSITE
+   - All buttons should work
+   - Images should load
+   - Animations should run smoothly
+   - Mobile responsive design
+
+🔧 CUSTOMIZATION:
+- Edit index.html for content changes
+- Edit styles.css for colors/design
+- Edit script.js for functionality
+- Replace image files with your own
+
+✅ NO DEPENDENCIES NEEDED:
+- Pure HTML/CSS/JavaScript
+- No frameworks or libraries
+- Works on all modern browsers
+- Mobile optimized
+
+🎯 LIVE FUNCTIONALITY:
+- Buy Now → Raydium swap page
+- Chart → DexScreener
+- Telegram → t.me/punkfuns
+- Twitter → x.com/punkfuns
+- Copy contract address
+- FAQ accordion
+- Smooth scrolling
+- Mobile touch effects
+- Animated backgrounds
+
+Your PUNK token website is ready to deploy! 🚀
